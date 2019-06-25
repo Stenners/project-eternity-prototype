@@ -1,0 +1,188 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+  background-image: url(/images/body-bg.jpg);
+  background-position: center 48px;
+  background-repeat: no-repeat;
+  color: #d4e0ea;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+  .body-header {
+    background-image: url(/images/body-header.jpg);
+    height: 52px;
+    background-position: bottom;
+  }
+}
+
+@font-face {
+  font-family: 'Friz Quadrata Regular OS';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Friz Quadrata Regular OS'), url('/fonts/friz-quadrata-regular-os-5870333951e7c.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Friz Quadrata Bold Italic OS';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Friz Quadrata Bold Italic OS'), url('/fonts/friz-quadrata-bold-italic-os-5870341205e0f.woff') format('woff');
+}
+
+/* Nav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navigation .nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .nav-bar {
+  width: 100%;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navigation .nav-bar a {
+  text-decoration: none;
+  color: #e4eefd;
+  font-family: 'Friz Quadrata Regular OS', serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  height: 83px;
+  width: 14vw;
+  max-width: 152px;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(/images/nav-bar.gif);
+}
+
+.navigation .nav-bar a:hover {
+  background-position: 0 -83px;
+  color: #b1e1f7;
+}
+
+.navigation .nav-bar a:nth-child(2) {
+  background-position: -152px 0px;
+}
+
+.navigation .nav-bar a:hover:nth-child(2) {
+  background-position: -152px -83px;
+}
+
+.navigation .nav-bar a:nth-child(3) {
+  background-position: -305px 0px;
+}
+
+.navigation .nav-bar a:hover:nth-child(3) {
+  background-position: -305px -83px;
+}
+
+.navigation .nav-bar a:nth-child(4) {
+  background-position: -457px 0px;
+}
+
+.navigation .nav-bar a:hover:nth-child(4) {
+  background-position: -457px -83px;
+}
+
+.navigation .nav-bar a:nth-child(5) {
+  background-position: -610px 0px;
+}
+
+.navigation .nav-bar a:hover:nth-child(5) {
+  background-position: -610px -83px;
+}
+
+.navigation .logo {
+  /* height: 155px;
+  position: absolute;
+  top: -36px;
+  left: 2px; */
+  height: 146px;
+  position: absolute;
+  top: -27px;
+  left: 6px;
+}
+
+.avatar {
+  background-image: url(/images/avatar-gold.png);
+  width: 65px;
+  height: 65px;
+  display: flex;
+  background-size: cover;
+  filter: grayscale(80%);
+  justify-content: center;
+  align-items: center
+}
+
+.avatar .avatar-image {
+  background-image: url(/images/95521500-avatar.jpg);
+  display: flex;
+  height: 50px;
+  background-size: contain;
+  border-radius: 50%;
+  width: 50px;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+  .navigation {
+    /* margin-top: 3rem; */
+    background-color: #000000a8;
+    padding: 2rem 0;
+  }
+}
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero-banner {
+  height: 10vh;
+  padding: 5rem 1rem;
+  ;
+  /* display: flex;
+  align-items: center;
+  flex-wrap: wrap; */
+}
+
+.hero-banner h1 {
+  font-family: 'Friz Quadrata Regular OS', serif;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+  .hero-banner {
+    height: 30vh;
+  }
+}
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button-primary {
+  color: #FFAC04;
+  background-color: #700100;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: -1px -1px 0px 0px #160000, -1px 1px 0px 0px #160000, 1px 1px 0px 0px #160000, 1px -1px 0px 0px #160000, -2px -2px 0px 0px #393536, 2px 2px 0px 0px #393536, -2px 2px 0px 0px #393536, 2px -2px 0px 0px #393536, -3px -3px 0px 0px #090A0A, 3px 3px 0px 0px #090A0A, -3px 3px 0px 0px #090A0A, 3px -3px 0px 0px #090A0A;
+}
+
+/* Content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.content {
+  background-image: url(/images/layout/textbox-tl.png), url(/images/layout/textbox-tr.png), url(/images/layout/content-tl.png), url(/images/layout/content-tr.png), url(/images/layout/content-bl.png), url(/images/layout/content-br.png), url(/images/layout/content-t.gif), url(/images/layout/content-b.gif), url(/images/layout/content-l.gif), url(/images/layout/content-r.gif), url(/images/layout/content-bg.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, repeat-x, repeat-y, repeat-y, repeat;
+  background-position: left top, right top, left top, right top, bottom left, bottom right, top center, bottom, left center, right center, center;
+  width: 100%;
+  padding: 6rem 4rem;
+  display: flex;
+}
