@@ -313,21 +313,20 @@ body {
   padding: 6rem 2rem;
 }
 
-.statue {
-  background-image: url(/images/statue.png);
-  background-repeat: no-repeat;
-  height: 444px;
-  pointer-events: none;
-  position: absolute;
-  bottom: -50px;
-  left: -243px;
-  width: 330px;
-}
-
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
-  .content {
+  .statue {
+    background-image: url(/images/statue.png);
+    background-repeat: no-repeat;
+    height: 444px;
+    pointer-events: none;
+    position: absolute;
+    bottom: -50px;
+    left: -243px;
+    width: 330px;
+  }
 
+  .content {
     padding: 8rem 4rem 6rem;
   }
 }
